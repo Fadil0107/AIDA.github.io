@@ -1,0 +1,346 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&font-family:wght@400;800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: 'Bungee', sans-serif;
+  background-color: #ffffff;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.4rem 7%;
+  background-color: #004fd8;
+  border-bottom: 1px solid #004FD8;
+  box-shadow: rgba(23, 22, 22, 0.2);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 65px;
+  z-index: 9999;
+  text-decoration: none;
+}
+
+.nav-wrapper .menu-wrapper {
+  display: flex;
+  font-size: 1.4rem;
+  margin: 0 1rem;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  text-decoration: none;
+}
+
+.menu-wrapper .menu {
+  list-style: none; /* Remove bullet points */
+  padding: 0; 
+  display: flex;
+  gap: 395px; 
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+.menu-wrapper .menu .menu-item {
+  margin-left: 0px;
+}
+
+.menu-wrapper .menu:hover {
+  color: #ffffff;
+}
+
+.menu-wrapper .menu .menu-link {
+  font-size: 1.3rem;
+  color: white;
+  font-family: 'Bungee', sans-serif;
+  font-weight: 400;
+  line-height: 65px;
+  text-decoration: none;
+}
+
+/*Warna teks PROGRAM*/
+.menu-wrapper .menu .menu-link.active {
+  font-weight: 700;
+  color: #F2CF0F;
+  text-decoration: none;
+}
+
+/*Warna teks PROGRAM saat dihover*/
+.menu-wrapper .menu .menu-link.active:hover {
+  color: #F2CF0F;
+  transition: 0.3s;
+  text-decoration: none;
+}
+
+/*Warna teks HOME dan About Us saat dihover*/
+.menu-wrapper .menu .menu-link:hover {
+  color: #F2CF0F;
+  transition: 0.3s;
+  text-decoration: none;
+}
+
+  /*Warna teks HOME saat dihover*/
+.menu-wrapper .menu .menu-link.active:hover {
+  color: white;
+  transition: 0.3s;
+}
+
+/*Warna teks Program dan About Us saat dihover*/
+.menu-wrapper .menu .menu-link:hover {
+  color: #F2CF0F;
+  transition: 0.3s;
+}
+
+
+.macbook-pro {
+  position: relative;
+  width: 100%;
+  min-height: calc(-50px + 809px);
+  padding: 100px;
+  top: 60px;
+  background-image: url('img/aboutus.png');
+  background-size: cover;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  }
+
+  .macbook-pro .text-wrapper-2 {
+    position: absolute;
+    top: 35px;
+    left: 1332px;
+    font-family: "Bungee", sans-serif;
+    font-weight: 400;
+    color: #d4bf28;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+  }
+  
+  .macbook-pro .MUHAMMAD-FADHIL {
+    position: absolute;
+    top: 355px;
+    left: 270px;
+    font-family: "Montserrat-Bold", Helvetica;
+    font-weight: 700;
+    color: transparent;
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .macbook-pro .span {
+    color: #000000;
+  }
+  
+  .macbook-pro .text-wrapper-3 {
+    color: #a68a00;
+  }
+  
+  .macbook-pro .ANITA-AYUDYA-RISKI {
+    position: absolute;
+    top: 633px;
+    left: 310px;
+    font-family: "Montserrat-Bold", Helvetica;
+    font-weight: 700;
+    color: transparent;
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .macbook-pro .NAJWA-ADLINA-front {
+    position: absolute;
+    top: 355px;
+    left: 555px;
+    font-family: "Montserrat-Bold", Helvetica;
+    font-weight: 700;
+    color: transparent;
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .macbook-pro .NUR-FATIMA-HASAN {
+    position: absolute;
+    top: 633px;
+    left: 555px;
+    font-family: "Montserrat-Bold", Helvetica;
+    font-weight: 700;
+    color: transparent;
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .macbook-pro .SALMAN-AL-FARIDZI {
+    position: absolute;
+    top: 355px;
+    left: 765px;
+    font-family: "Montserrat-Bold", Helvetica;
+    font-weight: 700;
+    color: transparent;
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .macbook-pro .PUTRI-RIZKY-GUNAWAN {
+    position: absolute;
+    top: 633px;
+    left: 775px;
+    font-family: "Montserrat-Bold", Helvetica;
+    font-weight: 700;
+    color: transparent;
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  /*IG FADHIL*/
+  .macbook-pro .group {
+    width: 186px;
+    top: 400px;
+    left: 310px;
+    position: absolute;
+    height: 24px;
+  }
+  
+  .macbook-pro .text-wrapper-4 {
+    position: absolute;
+    top: 2px;
+    left: 26px;
+    font-family: "Montserrat-Bold", Helvetica;
+    font-weight: 700;
+    color: #e800d1;
+    font-size: 15px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+    text-decoration: none;
+  }
+  
+  .macbook-pro .text-wrapper-6 {
+    position: absolute;
+    top: 3px;
+    left: 26px;
+    font-family: "Montserrat-Bold", Helvetica;
+    font-weight: 700;
+    color: #e800d1;
+    font-size: 15px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+    text-decoration: none;
+  }
+  .macbook-pro .image {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top: 5;
+    left: 0;
+    object-fit: cover;
+  }
+  
+    /*IG ANITA*/
+  .macbook-pro .group-2 {
+    width: 128px;
+    top: 680px;
+    left: 329px;
+    position: absolute;
+    height: 24px;
+  }
+  
+      /*IG NAJWA*/
+  .macbook-pro .group-3 {
+    width: 126px;
+    top: 400px;
+    left: 570px;
+    position: absolute;
+    height: 24px;
+  }
+
+      /*IG NUR*/
+  .macbook-pro .group-4 {
+    width: 133px;
+    top: 680px;
+    left: 570px;
+    position: absolute;
+    height: 24px;
+  }
+  
+
+  .label {
+    width: 104px;
+    height: 18px;
+  }
+  
+  .label .text-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    font-family: "Montserrat-Bold", Helvetica;
+    font-weight: 700;
+    color: #e800d1;
+    font-size: 15px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+  }
+  
+      /*IG SALMMAN*/
+  .macbook-pro .group-5 {
+    width: 117px;
+    top: 400px;
+    left: 810px;
+    position: absolute;
+    height: 24px;
+  }
+  
+      /*IG PUTRI*/
+  .macbook-pro .group-6 {
+    width: 196px;
+    top: 680px;
+    left: 775px;
+    position: absolute;
+    height: 24px;
+  }
+  
+  .macbook-pro .text-wrapper-5 {
+    position: absolute;
+    top: 3px;
+    left: 29px;
+    font-family: "Montserrat-Bold", Helvetica;
+    font-weight: 700;
+    color: #e800d1;
+    font-size: 15px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+    text-decoration: none;
+  }
+  
