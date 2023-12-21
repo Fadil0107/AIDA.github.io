@@ -135,8 +135,8 @@ body {
   
   .macbook-pro .MUHAMMAD-FADHIL {
     position: absolute;
-    top: 300px;
-    left: 351px;
+    top: 325px;
+    left: 340px;
     font-family: "Montserrat-Bold", Helvetica;
     font-weight: 700;
     color: transparent;
@@ -157,7 +157,7 @@ body {
   .macbook-pro .ANITA-AYUDYA-RISKI {
     position: absolute;
     top: 633px;
-    left: 410px;
+    left: 390px;
     font-family: "Montserrat-Bold", Helvetica;
     font-weight: 700;
     color: transparent;
@@ -169,8 +169,8 @@ body {
   
   .macbook-pro .NAJWA-ADLINA-front {
     position: absolute;
-    top: 300px;
-    left: 655px;
+    top: 325px;
+    left: 635px;
     font-family: "Montserrat-Bold", Helvetica;
     font-weight: 700;
     color: transparent;
@@ -183,7 +183,7 @@ body {
   .macbook-pro .NUR-FATIMA-HASAN {
     position: absolute;
     top: 633px;
-    left: 655px;
+    left: 635px;
     font-family: "Montserrat-Bold", Helvetica;
     font-weight: 700;
     color: transparent;
@@ -195,8 +195,8 @@ body {
   
   .macbook-pro .SALMAN-AL-FARIDZI {
     position: absolute;
-    top: 300px;
-    left: 865px;
+    top: 325px;
+    left: 855px;
     font-family: "Montserrat-Bold", Helvetica;
     font-weight: 700;
     color: transparent;
@@ -222,8 +222,8 @@ body {
   /*IG FADHIL*/
   .macbook-pro .group {
     width: 186px;
-    top: 350px;
-    left: 360px;
+    top: 375px;
+    left: 370px;
     position: absolute;
     height: 24px;
   }
@@ -268,7 +268,7 @@ body {
   .macbook-pro .group-2 {
     width: 128px;
     top: 680px;
-    left: 429px;
+    left: 420px;
     position: absolute;
     height: 24px;
   }
@@ -276,8 +276,8 @@ body {
       /*IG NAJWA*/
   .macbook-pro .group-3 {
     width: 126px;
-    top: 350px;
-    left: 670px;
+    top: 375px;
+    left: 665px;
     position: absolute;
     height: 24px;
   }
@@ -286,7 +286,7 @@ body {
   .macbook-pro .group-4 {
     width: 133px;
     top: 680px;
-    left: 670px;
+    left: 665px;
     position: absolute;
     height: 24px;
   }
@@ -311,10 +311,10 @@ body {
     white-space: nowrap;
   }
   
-      /*IG SALMMAN*/
+      /*IG SALMAN*/
   .macbook-pro .group-5 {
     width: 117px;
-    top: 350px;
+    top: 375px;
     left: 910px;
     position: absolute;
     height: 24px;
