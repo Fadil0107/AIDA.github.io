@@ -1,0 +1,328 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Plus+Jakarta+Sans:wght@400;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Bungee', sans-serif;
+    background-color: #004FD8;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.4rem 7%;
+    background-color: rgba(0, 79, 216);
+    border-bottom: 1px solid #004FD8;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 65px;
+    z-index: 9999;
+}
+
+.nav-wrapper .menu-wrapper {
+    display: flex;
+    font-size: 1.4rem;
+    margin: 0 1rem;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.menu-wrapper .menu {
+    list-style: none; /* Remove bullet points */
+    padding: 0; 
+    display: flex;
+    gap: 430px; 
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+}
+.menu-wrapper .menu .menu-item {
+    margin-left: 0px;
+}
+
+.menu-wrapper .menu:hover {
+    color: #F2CF0F;
+}
+
+.menu-wrapper .menu .menu-link {
+    font-size: 1.4rem;
+    color: white;
+    font-family: 'Bungee', sans-serif;
+    font-weight: 400;
+    line-height: 65px;
+}
+
+/*Warna teks PROGRAM*/
+.menu-wrapper .menu .menu-link.active {
+    font-weight: 700;
+    color: #F2CF0F;
+}
+
+/*Warna teks PROGRAM saat dihover*/
+.menu-wrapper .menu .menu-link.active:hover {
+    color: white;
+    transition: 0.3s;
+}
+
+/*Warna teks HOME dan About Us saat dihover*/
+.menu-wrapper .menu .menu-link:hover {
+    color: #F2CF0F;
+    transition: 0.3s;
+}
+
+/*HERO SECTION*/
+section {
+    position: relative;
+    width: 100%;
+    min-height: calc(-28px + 809px);
+    padding: 100px;
+    background-image: url('img/page bg blur 1.png');
+    background-size: cover;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/*MULTIPE STEP BAR*/
+.hero {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+}
+
+/* CSS untuk mengatur elemen steps */
+
+.container .steps {
+    display: flex;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 60px;
+    align-items: center;
+    position: absolute;
+    top: 13%;
+    left: 42%;
+    justify-content: space-between;
+}
+
+.steps .circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 25px;
+    width: 25px;
+    color: #ACACBF;
+    font-size: 0.625rem;
+    font-weight: 500;
+    border-radius: 50%;
+    border: 2px solid #ACACBF;
+    transition: all 200ms ease;
+    transition-delay: 0s;
+    background-color: #EDEDF4;
+    z-index: 2;
+    font-family:'Plus Jakarta Sans', sans-serif;
+    font-size: 0.938rem;
+    font-style: bold;
+}
+
+.steps .circle.active {
+    transition-delay: 100ms;
+    border-color: #635FFF;
+    color: #635FFF;
+    background: #F4C34A;
+}
+
+.steps .progress-bar {
+    position: absolute;
+    height: 25px;
+    width: 87%;
+    left: 6%;
+    background: #EDEDF4;
+    z-index: 1;
+}
+
+.progress-bar .indicator {
+    position: absolute;
+    height: 100%;
+    width: 0;
+    background: #F4C34A;
+    transition: width 0.3s ease-in-out;
+    left: 0;
+}
+
+.progressbar {
+    margin: 25px 0;
+    padding: 0;
+    overflow: hidden;
+    counter-reset: step;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: absolute;
+    gap: 60px;
+    top: 14%;
+    left: 41%;
+ }
+ 
+ .progressbar .menu-link {
+     list-style-type: none;
+     width: 100%;
+     color: #ACACBF;
+     font-family: 'Plus Jakarta Sans', sans-serif;
+     font-size: 0.875rem;
+     font-weight: 500;
+     text-align: center;
+     position: relative;
+ }
+ 
+ .progressbar .menu-link.active {
+     color: #FFFFFF;
+ }
+
+.hero-content {
+    position: relative;
+    text-align: center;
+}
+
+
+/*TOMBOL MULAI*/
+.bn20 {
+    font-family: 'Bungee', sans-serif;
+    font-weight: bold;
+    font-size: 2.25rem;
+    letter-spacing: 0.1em;
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 21%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #F4C34A;
+    border-radius: 22px;
+    z-index: 2;
+    height: 50px;
+    padding: 3px 34px;
+    top: 82%;
+    
+    background-size: 300% 100%;
+    transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+.bn20-hover:hover {
+background-position: 100% 0;
+transition: all 0.5s ease-in-out;
+-o-transition: all 0.5s ease-in-out;
+-webkit-transition: all 0.5s ease-in-out;
+transition: all 0.5s ease-in-out;
+}
+
+.bn20-hover:focus {
+outline: none;
+}
+
+.bn20-hover.bn23 {
+    box-shadow: 0 4px 15px 0 rgba(174, 189, 182, 0.75);
+}
+
+/*TOMBOL SELANJUTNYA*/
+.bn21 {
+    font-family: 'Bungee', sans-serif;
+    font-size: 1.875rem;
+    color: #0165FF;
+    text-decoration: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 21%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #fff;
+    border-radius: 22px;
+    z-index: 2;
+    height: 53px;
+    padding: 3px 22px;
+    top: 82%;
+    left: 87%;
+    width: 230px;
+    
+    background-size: 300% 100%;
+    transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+.bn21-hover:hover {
+    background-position: 100% 0;
+    transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    }
+    
+.bn21-hover:focus {
+    outline: none;
+}
+
+.bn21-hover.bn24 {
+    background-image: linear-gradient(
+      to right,
+      #F5F5F5,
+      #FFF6F6,
+      #F5F7F8,
+      #F6F1EE
+);
+      box-shadow: 0 4px 15px 0 rgba(174, 189, 182, 0.75);
+}
+
+@media (max-width: 1366px) {
+    html {
+        font-size: 75%;
+    }
+}
+
+/*TABLET*/
+@media (max-width: 768px) {
+    html {
+        font-size:62.5%;
+    }
+}
+
+/*MOBILE*/
+@media (max-width: 450px) {
+    html {
+        font-size:55%;
+    }
+}
+    .menu-item {
+        margin: 10px 0;
+    }
