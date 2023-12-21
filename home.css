@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Plus+Jakarta+Sans:wght@400;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Bungee', sans-serif;
+    background-color: #004FD8;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.4rem 7%;
+    background-color: #004fd8;
+    border-bottom: 1px solid #004FD8;
+    box-shadow: rgba(23, 22, 22, 0.2);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 65px;
+    z-index: 9999;
+}
+
+.nav-wrapper .menu-wrapper {
+    display: flex;
+    font-size: 1.4rem;
+    margin: 0 1rem;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.menu-wrapper .menu {
+    list-style: none; /* Remove bullet points */
+    padding: 0; 
+    display: flex;
+    gap: 395px; 
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+}
+.menu-wrapper .menu .menu-item {
+    margin-left: 0px;
+}
+
+.menu-wrapper .menu:hover {
+    color: #F2CF0F;
+}
+
+.menu-wrapper .menu .menu-link {
+    font-size: 1.3rem;
+    color: white;
+    font-family: 'Bungee', sans-serif;
+    font-weight: 400;
+    line-height: 65px;
+}
+
+/*Warna teks HOME*/
+.menu-wrapper .menu .menu-link.active {
+    font-weight: 700;
+    color: #F2CF0F;
+}
+
+/*Warna teks HOME saat dihover*/
+.menu-wrapper .menu .menu-link.active:hover {
+    color: white;
+    transition: 0.3s;
+}
+
+/*Warna teks Program dan About Us saat dihover*/
+.menu-wrapper .menu .menu-link:hover {
+    color: #F2CF0F;
+    transition: 0.3s;
+}
+
+/*HERO SECTION*/
+section
+{
+    position: relative;
+    width: 100%;
+    min-height: calc(92px + 600px);
+    padding: 100px;
+    display: flex;
+    background-image: url('img/BGroup.png');
+    justify-content: center;
+    align-items: center;
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat:no-repeat;
+}
+
+section img#logoAIDA 
+{
+    position: absolute;
+    top: -2%;
+    left: 19%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    max-width: 63%;
+    min-width: 63%;
+    animation: animate 4s linear infinite;
+}
+
+@keyframes animate {
+    0% {
+        transform: translate(-11px, 0);
+    }
+    50% {
+        transform: translate(-0px, -11px);
+    }
+    100% {
+        transform: translate(-11px, 0)
+    }
+}
+
+/*TEKS HERO*/
+.content {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 950px;
+    z-index: 2;
+    position:relative;
+    margin-top: 600px;
+}
+.content h1,
+.content p {
+    font-family:'Plus Jakarta Sans', sans-serif;
+    font-size: 1.75rem;
+    color: white;
+    margin: 0;
+}
+
+/* MEDIA QUERIES */
+/* 1024PX - LAPTOP */
+@media (max-width: 1024px) {
+    
+    .menu-wrapper .menu {
+        gap: 250px; /* Adjust the gap between menu items */
+        font-size: 1.4rem;
+        align-items: center;
+        justify-content: center;
+        padding: 0; 
+    }
+
+    section {
+        padding: 150px; /* Adjust padding for the hero section */
+    }
+
+    section img#logoAIDA {
+        max-width: 70%; 
+        top: 2%;
+        left: 20%;
+    }
+
+    .content {
+        margin-top: 450px; /* Adjust margin-top for the content section on medium-sized screens */
+    }
+
+    .content h1 {
+        font-size: 1.4rem;
+    }
+
+    .content p {
+        font-size: 1.4rem;
+    }
+}
+
+/* 922PX TABLET*/
+@media (max-width: 922px) {
+    
+    .menu-wrapper .menu {
+        gap: 200px; /* Adjust the gap between menu items */
+        font-size: 1.4rem;
+        align-items: center;
+        justify-content: center;
+        padding: 0; 
+    }
+
+    section {
+        padding: 150px; /* Adjust padding for the hero section */
+    }
+
+    section img#logoAIDA {
+        max-width: 70%; 
+        top: 6%;
+        left: 20%;
+    }
+
+    .content {
+        margin-top: 450px; /* Adjust margin-top for the content section on medium-sized screens */
+    }
+
+    .content h1 {
+        font-size: 1.4rem;
+    }
+
+    .content p {
+        font-size: 1.4rem;
+    }
+}
+
+/* 768PX - TABLET */
+@media (max-width: 768px) {
+    
+    .menu-wrapper .menu {
+        gap: 150px; /* Adjust the gap between menu items */
+        font-size: 1.4rem;
+        align-items: center;
+        justify-content: center;
+        padding: 0; 
+    }
+
+    section {
+        padding: 150px; /* Adjust padding for the hero section */
+    }
+
+    section img#logoAIDA {
+        max-width: 70%; 
+        top: 14%;
+        left: 20%;
+    }
+
+    .content {
+        margin-top: 450px; /* Adjust margin-top for the content section on medium-sized screens */
+    }
+
+    .content h1 {
+        font-size: 1.2rem;
+    }
+
+    .content p {
+        font-size: 1.2rem;
+    }
+}
+
+/* 576PX - MOBILE */
+/* Adjustments for smaller screens */
+@media (max-width: 576px) {
+
+    .menu-wrapper .menu {
+        gap: 60px; /* Adjust the gap between menu items */
+        font-size: 1.2rem;
+        align-items: center;
+        justify-content: center;
+        padding: 0; 
+    }
+
+    section {
+        padding: 60; /* Adjust padding for the hero section on smaller screens */
+    }
+
+    section img#logoAIDA {
+        max-width: 76%; /* Adjust the logo size for smaller screens */
+        position: center;
+        top: 17%;
+        left: 18%;
+    }
+
+    .content {
+        margin-top: 430px;
+    }
+
+    .content h1 {
+        font-size: 1.2rem;
+    }
+
+    .content p {
+        font-size: 1.1rem;
+    }
+}
+
+/* 476PX - MOBILE */
+/* Adjustments for smaller screens */
+@media (max-width: 476px) {
+
+    .menu-wrapper .menu {
+        gap: 30px; /* Adjust the gap between menu items */
+        font-size: 0.188rem;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+    }
+
+    section {
+        padding: 60; /* Adjust padding for the hero section on smaller screens */
+    }
+
+    section img#logoAIDA {
+        max-width: 78%; /* Adjust the logo size for smaller screens */
+        position: center;
+        top: 20%;
+        left: 17%;
+    }
+
+    .content {
+        margin-top: 400px;
+        flex-direction: column;
+    }
+
+    .content h1 {
+        font-size: 1rem;
+    }
+
+    .content p {
+        font-size: 1rem;
+    }
+}
