@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Plus+Jakarta+Sans:wght@400;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Bungee', sans-serif;
+    background-color: #004FD8;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.4rem 7%;
+    background-color: rgba(0, 79, 216);
+    border-bottom: 1px solid #004FD8;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 65px;
+    z-index: 9999;
+}
+
+.nav-wrapper .menu-wrapper {
+    display: flex;
+    font-size: 1.3rem;
+    margin: 0 1rem;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.menu-wrapper .menu {
+    list-style: none; /* Remove bullet points */
+    padding: 0; 
+    display: flex;
+    gap: 390px; 
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+}
+.menu-wrapper .menu .menu-item {
+    margin-left: 0px;
+}
+
+.menu-wrapper .menu:hover {
+    color: #F2CF0F;
+}
+
+.menu-wrapper .menu .menu-link {
+    font-size: 1.4rem;
+    color: white;
+    font-family: 'Bungee', sans-serif;
+    font-weight: 400;
+    line-height: 65px;
+}
+
+/*Warna teks PROGRAM*/
+.menu-wrapper .menu .menu-link.active {
+    font-weight: 700;
+    color: #F2CF0F;
+}
+
+/*Warna teks PROGRAM saat dihover*/
+.menu-wrapper .menu .menu-link.active:hover {
+    color: white;
+    transition: 0.3s;
+}
+
+/*Warna teks HOME dan About Us saat dihover*/
+.menu-wrapper .menu .menu-link:hover {
+    color: #F2CF0F;
+    transition: 0.3s;
+}
+
+/*HERO SECTION*/
+section {
+    position: relative;
+    width: 100%;
+    min-height: calc(-28px + 809px);
+    padding: 100px;
+    background-image: url('img/page bg blur 1.png');
+    background-size: cover;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/*MULTIPE STEP BAR*/
+.hero {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: middle;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 80px;
+}
+
+/* IMAGE RECTANGLE */
+.clickable-image-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px; /* Mengatur jarak antara elemen-elemen */
+}
+
+.small-image {
+    width: 50%;
+    max-width: 75%;
+    min-width: 75%;
+    transition: 1s;
+    z-index: 1;
+}
+
+.small-image:hover {
+    transform: scale(1.1);
+    z-index: 2;
+}
+
+/* TEKAN UNTUK PILIH */
+.custom-heading {
+    position: absolute;
+    left: 470px;
+    top: 685px;
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 2.25rem;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+/* MEDIA QUERIES */
+/* 1024PX - LAPTOP */
+@media (max-width: 1024px) {
+    .menu-wrapper .menu {
+        gap: 250px; /* Adjust the gap between menu items */
+        font-size: 1.4rem;
+        align-items: center;
+        justify-content: center;
+        padding: 0; 
+    }
+    
+    .custom-heading {
+        font-size: 2.313rem;
+        top: 800px;
+        left: 300px;
+    }
+
+    .hero {
+       height: 945px;    
+    }
+
+    .progressbar {
+        left: 410px;
+        top: 180px;
+        font-size: 1.063rem;
+        gap: 50px;
+    }
+
+    .container .steps {
+        left: 410px;
+        top: 178px;
+    }
+}
+
+/* 922PX TABLET*/
+@media (max-width: 922px) {
+    
+    .menu-wrapper .menu {
+        gap: 200px; /* Adjust the gap between menu items */
+        font-size: 1.4rem;
+        align-items: center;
+        justify-content: center;
+        padding: 0; 
+    }
+    
+    .custom-heading {
+        font-size: 1.813rem;
+        left: 34%;
+        top: 80%;
+    }
+
+    .hero {
+        height: 945px;    
+     }
+
+    .progressbar {
+        left: 380px;
+        top: 180px;
+        font-size: 1.063rem;
+        gap: 50px;
+    }
+
+    .container .steps {
+        left: 380px;
+        top: 178px;
+    }
+}
+
+/* 768PX - TABLET */
+@media (max-width: 768px) {
+    
+    .menu-wrapper .menu {
+        gap: 150px; /* Adjust the gap between menu items */
+        font-size: 1.4rem;
+        align-items: center;
+        justify-content: center;
+        padding: 0; 
+    }
+
+    .small-image {
+        max-width: 60%;
+    }
+
+    .custom-heading {
+        font-size: 1.688rem;
+        left: 34%;
+        top: 80%;
+    }
+
+    .hero {
+        height: 945px;    
+     }
+
+    .progressbar {
+        left: 300px;
+        top: 180px;
+        font-size: 1.063rem;
+        gap: 50px;
+    }
+
+    .container .steps {
+        left: 300px;
+        top: 178px;
+    }
+}
