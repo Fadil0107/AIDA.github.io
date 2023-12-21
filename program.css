@@ -1,0 +1,391 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Plus+Jakarta+Sans:wght@400;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Bungee', sans-serif;
+    background-color: #004FD8;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.4rem 7%;
+    background-color: #004fd8;
+    border-bottom: 1px solid #004FD8;
+    box-shadow: rgba(23, 22, 22, 0.2);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 65px;
+    z-index: 9999;
+}
+
+.nav-wrapper .menu-wrapper {
+    display: flex;
+    font-size: 1.4rem;
+    margin: 0 1rem;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.menu-wrapper .menu {
+    list-style: none; /* Remove bullet points */
+    padding: 0; 
+    display: flex;
+    gap: 395px; 
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-wrapper .menu .menu-item {
+    margin-left: 0px;
+}
+
+.menu-wrapper .menu:hover {
+    color: #F2CF0F;
+}
+
+.menu-wrapper .menu .menu-link {
+    font-size: 1.3rem;
+    color: white;
+    font-family: 'Bungee', sans-serif;
+    font-weight: 400;
+    line-height: 65px;
+}
+
+/*Warna teks PROGRAM*/
+.menu-wrapper .menu .menu-link.active {
+    font-weight: 700;
+    color: #F2CF0F;
+}
+
+/*Warna teks PROGRAM saat dihover*/
+.menu-wrapper .menu .menu-link.active:hover {
+    color: white;
+    transition: 0.3s;
+}
+
+/*Warna teks HOME dan About Us saat dihover*/
+.menu-wrapper .menu .menu-link:hover {
+    color: #F2CF0F;
+    transition: 0.3s;
+}
+
+/* Untuk .hero */
+.hero {
+    position: relative;
+    width: 100%;
+    min-height: calc(-28px + 809px);
+    padding: 100px;
+    background-image: url('img/page bg blur 1.png');
+    background-size: cover;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Untuk .hero-content */
+.hero-content {
+    position: relative;
+    text-align: center;
+}
+
+/* image #Announcement1 */
+#Announcement1 {
+    position: absolute;
+    top: 53%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 75%;
+    min-width: 75%;
+    object-fit: cover;
+}
+/* CARA MENGGUNAKAN */
+.custom-heading {
+    position: absolute;
+    left: 470px;
+    top: 235px;
+    text-align: center;
+    color: #4E61D4;
+    font-size: 2.25rem;
+    font-family: 'Bungee', sans-serif;
+    font-weight: 400;
+    word-wrap: break-word;
+}
+
+/* Untuk .instruction */
+.instruction {
+    position: absolute;
+    top: 41%;
+    left: 52%;
+    transform: translateX(-50%);
+    font-size: 1rem;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 700;
+    color: black;
+    word-wrap: break-word;
+    text-align: left;
+    line-height: 1.4;
+}
+/* Jarak Posisi dan Kamera*/
+.instruction .instruction-group {
+    margin-bottom: 20px;
+}
+
+/*Button Start*/
+.bn17 {
+    font-family: 'Bungee', sans-serif;
+    font-weight: bold;
+    font-size: 2.25rem;
+    letter-spacing: 0.1em;
+    text-decoration: none;
+    color: #F2CF59;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 21%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #0162FA;
+    border-radius: 22px;
+    z-index: 2;
+    height: 50px;
+    padding: 3px 34px;
+    
+    background-size: 300% 100%;
+    transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+.bn17-hover:hover {
+background-position: 100% 0;
+transition: all 0.5s ease-in-out;
+-o-transition: all 0.5s ease-in-out;
+-webkit-transition: all 0.5s ease-in-out;
+transition: all 0.5s ease-in-out;
+}
+
+.bn17-hover:focus {
+outline: none;
+}
+
+.bn17-hover.bn22 {
+background-image: linear-gradient(
+  to right,
+  #0162FA, 
+  #4f8ceb,
+  #9fbcea, 
+  #4169e1
+
+);
+box-shadow: 0 4px 15px 0 rgba(174, 189, 182, 0.75);
+}
+
+/* MEDIA QUERIES */
+/* 1024PX - LAPTOP */
+@media (max-width: 1024px) {
+    .menu-wrapper .menu {
+        gap: 250px; /* Adjust the gap between menu items */
+        font-size: 1.4rem;
+        align-items: center;
+        justify-content: center;
+        padding: 0; 
+    }
+
+    #Announcement1 {
+        max-width: 95%; 
+        top: 55%;
+        left: 50%;
+    }
+    
+    .custom-heading {
+        font-size: 2.313rem;
+        left: 33%;
+        top: 33%;
+    }
+
+    .hero {
+       height: 945px;    
+    }
+
+    .instruction {
+        font-size: 1.25rem;
+        left: 52%;
+    }
+
+    .bn17 {
+        top: 73%;
+    }
+}
+
+/* 922PX TABLET*/
+@media (max-width: 922px) {
+    
+    .menu-wrapper .menu {
+        gap: 200px; /* Adjust the gap between menu items */
+        font-size: 1.4rem;
+        align-items: center;
+        justify-content: center;
+        padding: 0; 
+    }
+
+    #Announcement1 {
+        max-width: 95%; 
+        top: 55%;
+        left: 50%;
+    }
+    
+    .custom-heading {
+        font-size: 1.813rem;
+        left: 34%;
+        top: 35%;
+    }
+
+    .hero {
+        height: 950px;    
+     }
+
+    .instruction {
+        font-size: 1.125rem;
+        left: 52%;
+    }
+
+    .bn17 {
+        top: 70%;
+    }
+}
+
+/*PENDING DULU*/
+/* 768PX - TABLET */
+@media (max-width: 768px) {
+    
+    .menu-wrapper .menu {
+        gap: 150px; /* Adjust the gap between menu items */
+        font-size: 1.4rem;
+        align-items: center;
+        justify-content: center;
+        padding: 0; 
+    }
+
+    #Announcement1 {
+        max-width: 110%; 
+        top: 55%;
+        left: 55%;
+    }
+    
+    .custom-heading {
+        font-size: 1.813rem;
+        left: 34%;
+        top: 35%;
+    }
+
+    .hero {
+        height: 999px;
+     }
+
+    .instruction {
+        font-size: 1.031rem;
+        left: 52%;
+    }
+
+    .bn17 {
+        top: 69%;
+    }
+}
+
+/* 576PX - MOBILE */
+/* Adjustments for smaller screens */
+@media (max-width: 576px) {
+        .menu-wrapper .menu {
+            gap: 60px; /* Adjust the gap between menu items */
+            font-size: 1.4rem;
+            align-items: center;
+            justify-content: center;
+            padding: 0; 
+        }
+    
+        #Announcement1 {
+            max-width: 130%; 
+            top: 55%;
+            left: 51%;
+        }
+        
+        .custom-heading {
+            font-size: 1.25rem;
+            left: 34%;
+            top: 35%;
+        }
+    
+        .hero {
+            height: 990px;    
+         }
+    
+        .instruction {
+            font-size: 0.938rem;
+            left: 54%;
+            word-wrap: none;
+        }
+    
+        .bn17 {
+            top: 69%;
+            max-width: 40%;
+        }
+    }
+
+/* 476PX - MOBILE */
+/* Adjustments for smaller screens */
+@media (max-width: 476px) {
+
+    .menu-wrapper .menu {
+        gap: 30px; /* Adjust the gap between menu items */
+        font-size: 0.188rem;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+    }
+
+    section {
+        padding: 60; /* Adjust padding for the hero section on smaller screens */
+    }
+
+    section img#logoAIDA {
+        max-width: 78%; /* Adjust the logo size for smaller screens */
+        position: center;
+        top: 20%;
+        left: 17%;
+    }
+
+    .content {
+        margin-top: 400px;
+        flex-direction: column;
+    }
+
+    .content h1 {
+        font-size: 1rem;
+    }
+
+    .content p {
+        font-size: 1rem;
+    }
+}
