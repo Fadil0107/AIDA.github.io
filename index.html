@@ -44,21 +44,22 @@
         <h1>APA ITU AIDA?</h1>
         <p>Sebuah web yang bisa mengukur badan secara real time menggunakan teknologi computer vision sebagai penggerak utamanya. Solusi ini bertujuan meningkatkan efisiensi serta mengeliminasi proses manual yang telah lama menjadi bagian dari proses pengukuran tubuh.</p>
     </main>
-    </header>
-    <script>
-        const toggleBtn = document.querySelector('.toggle_btn')
-        const toggleßtnIcon = document.querySelector('.toggle_btn i')
-        const dropDownMenu = document.querySelector('.dropdown_menu')
-        
-        toggleBtn.onclick = function () {
-            dropDownMenu.classList.toggle('open')
-            const isOpen = dropDownMenu.classList.contains('open')
-
-            toggleßtnIcon.classList = isOpen
-            ? 'fa-solid fa-xmark'
-            : 'fa-solid fa-bars'
-        }
-    </script>
 </section>
+</header>
+
+<script>
+    const toggleBtn = document.querySelector('.toggle_btn');
+    const toggleBtnIcon = document.querySelector('.toggle_btn i');
+    const dropDownMenu = document.querySelector('.dropdown_menu');
+
+    toggleBtn.onclick = function () {
+        dropDownMenu.classList.toggle('open');
+        const isOpen = dropDownMenu.classList.contains('open');
+
+       toggleBtnIcon.className = isOpen
+            ? 'fa-solid fa-xmark'
+            : 'fa-solid fa-bars';
+    };
+</script>
 </body>
 </html>
