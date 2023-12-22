@@ -221,7 +221,7 @@ section {
 .custom-heading {
     position: absolute;
     left: 48vw;
-    top: 108vh;
+    top: 120vh;
     transform: translateX(-50%);
     text-align: center;
     color: #FFFFFF;
