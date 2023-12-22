@@ -3,10 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>AIDA</title>
     <link rel="stylesheet" href="home.css">
 </head>
 <body>
+    <header>
     <!-- Navbar start -->
     <nav class="navbar">
         <div class="container nav-wrapper">
@@ -16,9 +18,22 @@
                     <li class="menu-item"><a href="program.html" class="menu-link">Program</a></li>
                     <li class="menu-item"><a href="aboutus.html" class="menu-link">About Us</a></li>
                 </ul>
+            </div> <!-- END menu-wrapper -->
+    
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars"></i>
             </div>
+        </div> <!-- END nav-wrapper -->
+    
+        <div class="dropdown_menu">
+            <ul>
+                <li><a href="#" class="menu-link">HOME</a></li>
+                <li><a href="program.html" class="menu-link">PROGRAM</a></li>
+                <li><a href="aboutus.html" class="menu-link">ABOUT US</a></li>
+            </ul>
         </div>
     </nav>
+        
     <!-- Navbar end -->
 <!--Hero Section Start--> 
 <section class="hero" id="HOME">
@@ -29,6 +44,21 @@
         <h1>APA ITU AIDA?</h1>
         <p>Sebuah web yang bisa mengukur badan secara real time menggunakan teknologi computer vision sebagai penggerak utamanya. Solusi ini bertujuan meningkatkan efisiensi serta mengeliminasi proses manual yang telah lama menjadi bagian dari proses pengukuran tubuh.</p>
     </main>
+    </header>
+    <script>
+        const toggleBtn = document.querySelector('.toggle_btn')
+        const toggleßtnIcon = document.querySelector('.toggle_btn i')
+        const dropDownMenu = document.querySelector('.dropdown_menu')
+        
+        toggleBtn.onclick = function () {
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+
+            toggleßtnIcon.classList = isOpen
+            ? 'fa-solid fa-xmark'
+            : 'fa-solid fa-bars'
+        }
+    </script>
 </section>
 </body>
 </html>
