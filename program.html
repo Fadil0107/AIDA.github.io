@@ -3,42 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Program</title>
     <link rel="stylesheet" href="program.css">
 </head>
 <body>
-        <!-- Navbar start -->
-        <nav class="navbar">
-            <div class="container nav-wrapper">
-                <div class="menu-wrapper">
-                    <ul class="menu">
-                        <li class="menu-item"><a href="index.html" class="menu-link">HOME</a></li>
-                        <li class="menu-item"><a href="program.html" class="menu-link active">Program</a></li>
-                        <li class="menu-item"><a href="aboutus.html" class="menu-link">About Us</a></li>
-                    </ul>
-                </div>
+    <!-- Navbar start -->
+    <nav class="navbar">
+        <div class="container nav-wrapper">
+            <div class="menu-wrapper">
+                <ul class="menu">
+                    <li class="menu-item"><a href="home.html" class="menu-link">HOME</a></li>
+                    <li class="menu-item"><a href="program.html" class="menu-link active">Program</a></li>
+                    <li class="menu-item"><a href="aboutus.html" class="menu-link">About Us</a></li>
+                </ul>
             </div>
-        </nav>
-        <!-- Navbar end -->
-        <!--Hero Section Start--> 
-        <section class="hero" id="Program">
-            <img src="img/Announcement 1.png" id="Announcement1">
-            <h1 class="custom-heading">Cara Menggunakan</h1>
-            <div class="instruction">
-                <div class="instruction-group">
-                    <span>Posisi</span></br>
-                    <span>1. Posisikan badanmu tegak lurus</span></br>
-                    <span>2. Rentangkan sedikit tanganmu</span></br>
-                    <span>3. Posisi badan lurus depan menghadap kamera</span></br>
-                </div>
-                <div class="instruction-group">
-                    <span>Kamera</span></br>
-                    <span>1. Pastikan kamera bersih dari kotoran/debu</span></br>
-                    <span>2. Cahaya yang cukup untuk menerangi anda</span></br>
-                    <span>3. Terdeteksi secara langsung oleh kamera webcam</span></br>
-                </div>
+            <!-- END nav-wrapper -->
+            <div class="toggle_btn">
+                <i class="fas fa-bars"></i>
             </div>
-            <a href="step1.html" class="bn17 bn17-hover bn22">Mulai</a>
-        </section>
+        </div>
+        <div class="dropdown_menu">
+            <ul>
+                <li><a href="home.html" class="menu-link">HOME</a></li>
+                <li><a href="#" class="menu-link">PROGRAM</a></li>
+                <li><a href="aboutus.html" class="menu-link">ABOUT US</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!--Hero Section Start-->
+    <section class="hero" id="Program">
+        <img src="img/Announcement 1.png" id="Announcement1">
+        <h1 class="custom-heading">Cara Menggunakan</h1>
+        <div class="instruction">
+            <div class="instruction-group">
+                <span>Posisi</span><br>
+                <span>1. Posisikan badanmu tegak lurus</span><br>
+                <span>2. Rentangkan sedikit tanganmu</span><br>
+                <span>3. Posisi badan lurus depan menghadap kamera</span><br>
+            </div>
+            <div class="instruction-group">
+                <span>Kamera</span><br>
+                <span>1. Pastikan kamera bersih dari kotoran/debu</span><br>
+                <span>2. Cahaya yang cukup untuk menerangi anda</span><br>
+                <span>3. Terdeteksi secara langsung oleh kamera webcam</span><br>
+            </div>
+        </div>
+        <a href="step1.html" class="bn17 bn17-hover bn22">Mulai</a>
+    </section>
+    <script>
+        const toggleBtn = document.querySelector('.toggle_btn');
+        const toggleBtnIcon = document.querySelector('.toggle_btn i');
+        const dropDownMenu = document.querySelector('.dropdown_menu');
+        
+        toggleBtn.onclick = function () {
+            dropDownMenu.classList.toggle('open');
+            const isOpen = dropDownMenu.classList.contains('open');
+    
+            toggleBtnIcon.classList = isOpen
+                ? 'fas fa-times'
+                : 'fas fa-bars';
+        };
+    </script>
 </body>
 </html>
+
+    
